@@ -298,14 +298,18 @@ a {
 
 /* About */
 .about {
-  margin-top: 207px;
+  margin-top: 138px;
 }
 
 .about__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  row-gap: 196px;
 }
-
+.about__media {
+  position: relative;
+}
 .about__label {
   font-family: Sora, sans-serif;
   font-size: 1.6rem;
@@ -361,7 +365,119 @@ a {
 
 .about__check-item::after {
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: 5px;
   content: url(../icons/about-icon-01.svg);
+}
+
+.about__card {
+  padding: 30px 26px;
+  position: absolute;
+  top: 158px;
+  left: 0;
+  width: 136px;
+  border-radius: 10px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px 0 rgba(85, 240, 255, 0.17);
+  text-align: center;
+}
+
+.about__card-title {
+  color: #fff;
+  font-family: "Sora";
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about__card-desc {
+  margin-top: 14px;
+  color: #c6f4f9;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42;
+}
+
+.about__card-decor {
+  position: absolute;
+  top: -39px;
+  right: -32px;
+}
+
+.about__img-wrap {
+  position: relative;
+  margin-left: auto;
+  width: 494px;
+}
+
+.about__img-wrap::after {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: -1;
+  content: "";
+  height: 336px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  border-radius: 16px;
+}
+
+.about__img {
+  width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about__media-decor {
+  position: absolute;
+  top: 157px;
+  right: -48px;
+  z-index: -1;
+}
+
+.about__img-wrap-bottom {
+  width: 458px;
+  margin-left: 0;
+  border-radius: 18px;
+  border: 2px solid #fff;
+  background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+  box-shadow: 0 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.about__img-wrap-bottom::after {
+  content: none;
+}
+
+.about__img-bottom {
+  width: 100%;
+}
+
+.about__decor-img {
+  position: absolute;
+}
+
+.about__decor-img:nth-child(1) {
+  top: 13px;
+  right: 64px;
+}
+.about__decor-img:nth-child(2) {
+  top: -16px;
+  right: 13px;
+}
+.about__decor-img:nth-child(3) {
+  top: 25px;
+  right: -28px;
+}
+.about__decor-img:nth-child(4) {
+  top: 268px;
+  right: -36px;
+}
+.about__decor-img:nth-child(5) {
+  top: 336px;
+  right: 19px;
+}
+.about__decor-img:nth-child(6) {
+  bottom: -55px;
+  right: -42px;
 }
