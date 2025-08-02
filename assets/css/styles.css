@@ -1122,3 +1122,31 @@ a {
   width: 24px;
   background: #ff5b2e;
 }
+
+.blog {
+  padding: 78px 0;
+}
+
+.blog__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog__info {
+  width: 350px;
+  margin-right: 74px;
+}
+
+.blog__desc {
+  margin-top: 0;
+}
+
+.blog__cta {
+  width: 182px;
+  margin-top: 24px;
+  border-radius: 31px;
+  border: 1px solid #ff5b2e;
+  box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
+  color: #ff5b2e;
+}
